@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+   display: flex;
+   justify-content: center;
+}
+
+.forms{
+    margin-top: 3vw;
+}
+
+.Header {
+    margin-top:  1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title1{
+    font-family:cursive
+}
+.box-seccion{
+    display: flex;
+}
