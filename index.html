@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es">s
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -11,57 +11,135 @@
 		<link rel="stylesheet" href="./styles.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">	
-    </head>
+	</head>
 	<body>
-        <div class="forms" style="width: 50rem; height: 25rem; border: solid black ;">
-			<div class="Header">
-                <i class="fa-regular fa-file fa-2xl" style="color: #0074f0;"></i>
-                <div class="title1">
-                    <h4>Formulario con HTML5</h4>
-                </div>
-                <i class="fa-regular fa-file fa-2xl" style="color: #0074f0;"></i>
-            </div>
-            <div class="first box">
-                <div class="">
-					<p>some fields are missing</p>
+		<div class="container">
+
+			<div class="card">
+				<div class="card-header text-start text-header">
+				  <b>Payment for example</b>
 				</div>
-                <div class="box-seccion">
-					<div class="card border-secondary mb-3" style="width: 18rem; height: 5rem; ">
-						<div class="card-header">Card</div>
-						<div class="card-body text-secondary">
+				<div class="card-body">
 
+					<div class="alert alert-danger" role="alert">
+						Some fields are missing
+					  </div>
+
+				  <div class="row row-cols-3">
+					<div class="col-6">
+						<label  class="form-label">Card #</label>
+  						<input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXXX">
+					</div>
+					<div class="col-3">
+						<label  class="form-label">CVC #</label>
+  						<input type="password" class="form-control" placeholder="XXX">
+					</div>
+
+					<div class="col-3">
+						<label  class="form-label">Amount $</label>
+						<div class="input-group mb-3">
+							<span class="input-group-text">$</span>
+							<input type="number" class="form-control" placeholder="XX.XX">
+						  </div>
+					</div>
+
+					<div class="col-12">
+						<div class="row row-cols-2">
+							<div class="col-6">
+								<label  class="form-label">First Name</label>
+								<input type="text" class="form-control" placeholder="Chanchito">
+							</div>
+							<div class="col-6">
+								<label  class="form-label">Last Name</label>
+								<input type="text" class="form-control" placeholder="Perez">
+							</div>
+							<div class="col-6">
+								<label  class="form-label">City</label>
+								<input type="text" class="form-control" placeholder="Florida">
+							</div>
+							<div class="col-3">
+								<label  class="form-label">State</label>
+
+								<select class="form-select" aria-label="State">
+									<option selected>State</option>
+									<option value="Miami">Miami</option>
+									<option value="Texas">Texas</option>
+									<option value="California">California</option>
+									</select>
+							</div>
+							<div class="col-3">
+								<label  class="form-label">Code Postal</label>
+								<input type="text" class="form-control" placeholder="XXXX">
+							</div>
+							<div class="col-12">
+								<div class="row row-cols-2"> 
+									<div class="col-6">
+										<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+											<div class="row">
+												<div class="col-12">
+													<label>
+														We accept:
+													</label>
+												</div>
+
+												<div class="col-12 methods-payments">
+													<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+										<label class="btn btn-outline-primary" for="btnradio1">
+											<i class="fa-brands fa-cc-visa"></i>
+										</label>
+									  
+										<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+										<label class="btn btn-outline-primary" for="btnradio2">
+											<i class="fa-brands fa-cc-mastercard"></i>
+										</label>
+									  
+										<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+										<label class="btn btn-outline-primary" for="btnradio3">
+											<i class="fa-brands fa-cc-paypal"></i>
+										</label>
+
+										<input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+										<label class="btn btn-outline-primary" for="btnradio4">
+											<i class="fa-brands fa-cc-amex"></i>
+										</label>
+
+										
+												</div>
+											</div>
+										
+
+										
+									  	</div>
+									</div>
+
+									<div class="col-6">
+										<label>Message:</label>
+										<div class="form-floating">
+											<textarea class="form-control" id="floatingTextarea2" style="height: 200px"></textarea>
+										  </div>
+										  <span class="text-muted"> Add any notes here... </span>
+									</div>
+									
+									</div>
+								</div>
 						</div>
 					</div>
-					<br>
-                    <div class="card border-secondary mb-3" style="width: 18rem; height: 5rem; ">
-						<div class="card-header">CVC</div>
-						<div class="card-body text-secondary">
+
+				  </div>
+				</div>
+				<div class="card-footer">
+					<div class="button1">
+						<button type="button" class="btn btn-secondary">Cancel</button>
+					</div>
 						
-						</div>
+					<div class="button2">
+						<button type="button" class="btn btn-primary">Send</button>
 					</div>
-					<br>
-                    <div class="card border-secondary mb-3" style="width: 18rem;">
-						<div class="card-header">Amound</div>
-						<div class="card-body text-secondary">
-						</div>
-					</div>
-                </div>
-            </div>
-            <div class="right-box">
+						
+				  </div>
+				</div>
+			  </div>
 
-            </div>
-            <div calss="Left-box">
-
-            </div>
-            <div class="final-box">
-            </div>
-			
-			
-			<div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+		</div>
     </body>
 </html>   

@@ -1,23 +1,32 @@
-body {
-    background-color: black;
-   display: flex;
-   justify-content: center;
-}
-
-.forms{
-    margin-top: 3vw;
-}
-
-.Header {
-    margin-top:  1vw;
+.container{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.title1{
-    font-family:cursive
+.text-header{
+    font-size: 2rem;
+    font-style: italic;
 }
-.box-seccion{
+
+.methods-payments{
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+}
+
+.button1{
+    padding: 10px;
 }
